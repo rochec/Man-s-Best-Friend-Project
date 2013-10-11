@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CRViewController : UIViewController
+@interface CRViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
 
+-(void)printHelloWorld;
+@property (strong, nonatomic) IBOutlet UIImageView *myImageView;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *breedLabel;
+@property (strong, nonatomic) NSMutableArray *myDogs;
+
+@property (strong, nonatomic) IBOutlet UIPickerView *picker;
+@property (strong, nonatomic) NSArray *breedArray;
 @end
